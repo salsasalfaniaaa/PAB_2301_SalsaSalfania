@@ -1,0 +1,24 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_form"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Form" />
+
+    <item
+        android:id="@+id/nav_hasil"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Hasil" />
+
+    <item
+        android:id="@+id/nav_informasi"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Informasi" />
+
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Profil" />
+
+</menu>

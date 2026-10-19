@@ -1,0 +1,158 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F4FC">
+
+    <!-- Area konten yang dapat di-scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header Ungu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:background="#6200EE">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMASI APLIKASI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kenali fitur dan cara menggunakan aplikasi PAB 2301 dengan mudah."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Tentang Aplikasi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:elevation="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang PAB 2301"
+                    android:textColor="#6200EE"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="PAB 2301 merupakan aplikasi pendaftaran digital sederhana yang memudahkan pengguna mengisi formulir, melakukan validasi, dan melihat hasil pendaftaran."
+                    android:textColor="#555555"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+            <!-- Judul Fitur -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"
+                android:text="Fitur Utama"
+                android:textColor="#333333"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <!-- Fitur Form -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:text="✎  Formulir Pendaftaran\n\nMengisi nama, jenis kelamin, kota asal, dan persetujuan."
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <!-- Fitur Validasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:text="✓  Validasi Data\n\nMemeriksa kelengkapan data sebelum disimpan."
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <!-- Fitur Hasil -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:text="▤  Hasil Pendaftaran\n\nMenampilkan informasi yang telah disimpan."
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <!-- Fitur Navigasi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:text="⌘  Bottom Navigation\n\nBerpindah antarhalaman melalui menu di bawah layar."
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <!-- Cara Penggunaan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cara Menggunakan"
+                android:textColor="#333333"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="18dp"
+                android:background="@android:color/white"
+                android:text="1. Buka menu Form.\n\n2. Masukkan data diri dengan lengkap.\n\n3. Pilih kota dan jenis kelamin.\n\n4. Aktifkan persetujuan S&amp;K.\n\n5. Tekan SIMPAN.\n\n6. Buka menu Hasil untuk melihat data."
+                android:textColor="#444444"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation tetap di bawah -->
+    <include layout="@layout/bottom_navigation" />
+
+</LinearLayout>
